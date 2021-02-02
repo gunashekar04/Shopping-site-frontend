@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas</title>
+    <link rel="stylesheet" href="adidas.css">
+    <link rel="shortcut icon" href="images/adidas.ico" type="image/x-icon">
+</head>
+
+<body >
+
+    <!-- navbar -->
+    <div class="header">
+        <div class="brandimg">
+            <a href="#"><img class="brandimg" src="images/brandimg.jpg" onclick="location.reload()" title="Home"/></a>
+        </div>
+        <div class="filter">
+            <input type="text"placeholder="Min price"  id="min" title="Minimum price"/>
+            <input type="text"  placeholder="Max price" id ="max" title="Maximum price"/>
+            <button class="filterbtn" onclick="filter()">Filter</button>
+        </div>
+        <div class="search">
+            <input type="text" style="width: 100%;" placeholder="Search" id="searchstr" onkeyup="search()" title="Search product name">    
+        </div>
+        <div class="cart" >
+            <div class="cartlogo">
+                <a href="#cart"><img class="cartlogo" src="images/cartlogo.png" title="Go to cart"></a>
+            </div>
+            <div class="cartlogo">
+                <p style="color: white; padding-bottom: 10px;">Cart</p>
+                <h4 style="margin-left: 15px;" id="count">0</h4>
+            </div>            
+        </div>   
+    </div>
+    
+    <!-- display products -->
+    <div class="products">
+        <div class="layout" id="item">
+        </div>
+    </div>
+
+    
+    <!-- diaplay cart -->
+    <div class=cartdisplay id="cart">
+        <hr/><br/>
+        <h1 >Cart Items</h1>
+        <a id="gototop" href="#">Go to top</a>
+        <div class="layout" id="cartitem">
+        </div>
+    </div>
+
+
+              
+<script src="adidas.js"></script>
+</body>
+
+</html>
